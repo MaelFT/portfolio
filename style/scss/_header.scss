@@ -1,0 +1,55 @@
+header {
+	height: 100vh;
+	color: $white;
+
+	// Positioning
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+	#divPresentation {
+		transform: translateY(300px);
+		opacity: 0;
+		animation: launchAnim 2s forwards;
+
+		h1 {
+			margin: 0;
+		}
+	}
+
+	input[type="button"] {
+		background-image: linear-gradient(
+			to right top,
+			#f6877c,
+			#ff8f70,
+			#ee7562,
+			#f06a65,
+			#f15e6b
+		);
+		color: $white;
+		padding: 15px 50px;
+		margin-top: 100px;
+		border: 0px;
+		border-radius: 25px;
+		transition: 0.5s;
+
+		transform: translateY(300px);
+		opacity: 0;
+		animation: launchAnim 2s forwards;
+
+		&:hover {
+			cursor: pointer;
+			box-shadow: 0 0 20px $red;
+		}
+	}
+
+	@keyframes launchAnim {
+		100% {
+			transform: translateY(0px);
+			opacity: 1;
+		}
+	}
+}

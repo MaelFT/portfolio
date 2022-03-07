@@ -1,23 +1,56 @@
+// Fonts
+
 @font-face {
 	font-family: Raleway;
 	src: url(../assets/fonts/Raleway-Regular.ttf);
 }
 
+// Variables
+
 $font-1: Raleway;
 
-$white: #f0f2f0;
-$dark: #1a1616;
-$beige: #f5f0e1;
-$darkblue: #1e3d59;
+$white: #ffffff;
+$dark: #16151a;
+$beige: #fdf0e7;
+$blue: #27c7d4;
+$orange: #fe9063;
+$red: #ea5863;
+
+// Global settings
+
+html {
+	scroll-behavior: smooth;
+}
 
 body {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	height: 100vh;
-	font-family: $font-1, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 
 	li {
 		list-style: none;
+	}
+
+	h1 {
+		font-size: 5rem;
+	}
+
+	h2 {
+		font-size: 2rem;
+	}
+
+	h3 {
+		font-size: 1.5rem;
+	}
+
+	p {
+		font-size: 1rem;
+	}
+
+	a {
+		color: transparent;
+		text-decoration: transparent;
 	}
 }

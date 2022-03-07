@@ -1,0 +1,16 @@
+.scrollTop {
+	position: fixed;
+	height: 35px;
+	width: 35px;
+	bottom: 50px;
+	right: 50px;
+	z-index: 5;
+
+	img {
+		color: $white;
+	}
+
+	&:hover {
+		cursor: pointer;
+	}
+}
