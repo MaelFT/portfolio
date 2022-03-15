@@ -13,4 +13,11 @@
 	&:hover {
 		cursor: pointer;
 	}
+
+	@media (max-width: 800px) {
+		height: 25px;
+		width: 25px;
+		bottom: 25px;
+		right: 25px;
+	}
 }

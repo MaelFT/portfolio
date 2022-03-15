@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="../style/style.css">
   <title>Portfolio Maël</title>
-
 </head>
 
 <body>
@@ -25,11 +24,24 @@
   <!-- Header -->
 
   <header>
-    <div id="divPresentation">
-      <h1>MAËL FATH</h1>
-      <h2>Étudiant en développement web</h2>
+    <div id="header">
+      <div id="divPresentation">
+        <h1>MAËL FATH</h1>
+        <h2>Étudiant en développement web</h2>
+      </div>
+      <div class="networks">
+        <a href="https://www.linkedin.com/in/mael-fath/" target="_blank">
+          <img src="../assets/img/logo/linkedinLogo.svg" alt="linkedinLogo">
+        </a>
+        <a href="https://github.com/MaelFT" target="_blank">
+          <img src="../assets/img/logo/whiteGithubLogo.svg" alt="whiteGithubLogo">
+        </a>
+      </div>
+      <input type="button" value="CV" onclick="window.open('../assets/Maël FATH CV.pdf');">
     </div>
-    <input type="button" value="CV" onclick="window.open('../assets/Maël FATH CV.pdf');">
+    <a href="#about">
+      <img src="../assets/img/arrow_down.svg" alt="arrow_down" id="arrow-down">
+    </a>
     <div class="stars">
       <div class="star"></div>
       <div class="star"></div>
@@ -84,11 +96,24 @@
     </div>
   </header>
 
+  <!-- About me -->
+
+  <section id="about">
+    <h2>A propos</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quo eligendi, nobis perferendis fuga cumque
+      perspiciatis alias tempora saepe nisi aut officiis assumenda numquam consequatur unde hic distinctio quisquam eius
+      eum provident. Adipisci odio architecto alias nemo velit aut, dignissimos laudantium qui at eos? Temporibus
+      cupiditate id quisquam saepe accusamus? Ipsum inventore consectetur rem ratione eum sequi optio doloribus ullam
+      molestiae quasi saepe consequatur, iure ut beatae rerum suscipit similique harum. Molestias, architecto in. Velit
+      autem libero neque odit aliquid illum iste amet necessitatibus vitae minus accusamus distinctio officia
+      repellendus, quod quaerat doloremque! Perspiciatis quo eum praesentium qui eveniet ratione!</p>
+  </section>
+
   <!-- Skills -->
 
   <section id="skillsSection">
     <div class="container">
-      <h1 class="title-skills">Compétences</h1>
+      <h2 class="title-skills">Compétences</h2>
       <div class="bar">
         <div class="skill">HTML</div>
         <div class="bar-outer">
@@ -133,14 +158,23 @@
         </div>
       </div>
       <div class="bar">
-        <div class="skill">Photoshop & XD</div>
+        <div class="skill">Photoshop</div>
         <div class="bar-outer">
           <div class="speech-bubble fluent">50%</div>
           <div class="bar-inner fl"></div>
         </div>
       </div>
+      <div class="bar">
+        <div class="skill">Adobe XD</div>
+        <div class="bar-outer">
+          <div class="speech-bubble adoxd">100%</div>
+          <div class="bar-inner xd"></div>
+        </div>
+      </div>
     </div>
   </section>
+
+  <!-- Portfolio -->
 
   <section class="portfolio" href="#portfolio">
     <h2>Portfolio</h2>
@@ -174,36 +208,7 @@
     </div>
   </section>
 
-  <!-- Contact -->
-
-  <section id="sectionContact">
-    <h2>Contact</h2>
-    <div id="formContact">
-      <form action="post" id="form">
-        <input type="text" name="nameContact" id="nameContact" placeholder="nom, prénom" required>
-        <input type="text" name="mailContact" id="mailContact" placeholder="mail" required>
-        <textarea name="textarea" id="textareaContact" cols="30" rows="10" placeholder="message.." required></textarea>
-        <button>Envoyer</button>
-      </form>
-    </div>
-  </section>
-
-  <!-- Footer -->
-
-  <footer>
-    <img src="../assets/img/logo/whiteLogo.png" alt="whitelogo">
-    <h3>MAËL FATH - 2022</h3>
-    <div class="networks">
-      <a href="https://www.linkedin.com/in/mael-fath/" target="_blank">
-        <img src="../assets/img/logo/linkedinLogo.svg" alt="linkedinLogo">
-      </a>
-      <a href="https://github.com/MaelFT" target="_blank">
-        <img src="../assets/img/logo/whiteGithubLogo.svg" alt="whiteGithubLogo">
-      </a>
-    </div>
-  </footer>
-
-  <script src="../js/contact.js"></script>
+  <script src="../js/arrow.js"></script>
 
   <!-- Swiper.js -->
 

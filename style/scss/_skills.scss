@@ -1,129 +1,148 @@
-.container {
-	margin-top: 2em;
-	color: $white;
-}
+#skillsSection {
+	height: 100vh;
 
-.title-skills {
-	font-size: 2em;
-	margin-top: 4em;
-	transition: all 400ms ease-in-out;
-	margin: 4rem auto;
-	text-align: center;
-}
+	.container {
+		margin-top: 2em;
+		color: $white;
+	}
 
-.bar {
-	width: 40%;
-	margin: 2em auto;
-}
+	.title-skills {
+		font-size: 2em;
+		margin-top: 4em;
+		transition: all 400ms ease-in-out;
+		margin: 4rem auto;
+		text-align: center;
+	}
 
-.skill {
-	font-size: 0.8em;
-	text-transform: uppercase;
-	margin-bottom: 0.25em;
-}
+	.bar {
+		width: 50%;
+		margin: 2em auto;
 
-.speech-bubble {
-	font-size: 0.75em;
-	line-height: 2em;
-	position: absolute;
-	top: -2.7em;
-	text-align: center;
-	min-width: 3em;
-	border-radius: 0.3em;
-}
+		@media (max-width: 1000px) {
+			width: 60%;
+		}
+	}
 
-.html {
-	left: calc(80% - 1.5em);
-}
+	.skill {
+		font-size: 0.8em;
+		text-transform: uppercase;
+		margin-bottom: 0.25em;
+	}
 
-.jquery {
-	left: calc(70% - 1.5em);
-}
+	.speech-bubble {
+		font-size: 0.75em;
+		line-height: 2em;
+		position: absolute;
+		top: -2.7em;
+		text-align: center;
+		min-width: 3em;
+		border-radius: 0.3em;
+	}
 
-.fluent {
-	left: calc(50% - 1.5em);
-}
+	.html {
+		left: calc(80% - 1.5em);
+	}
 
-.photo,
-.illustrator,
-.indesign {
-	left: calc(30% - 1.5em);
-}
+	.jquery {
+		left: calc(70% - 1.5em);
+	}
 
-.sketch {
-	left: calc(40% - 1.5em);
-}
+	.fluent {
+		left: calc(50% - 1.5em);
+	}
 
-.speech-bubble:after {
-	border: 0.5em solid transparent;
-	content: "";
-	margin-left: -0.5em;
-	position: absolute;
-	top: 100%;
-	left: 50%;
-}
+	.photo,
+	.illustrator,
+	.indesign {
+		left: calc(30% - 1.5em);
+	}
 
-.bar-outer {
-	height: 1.25em;
-	background: #eeeeee;
-	position: relative;
-	border-radius: 0.3em;
-}
+	.sketch {
+		left: calc(40% - 1.5em);
+	}
 
-.bar-inner {
-	width: 0;
-	height: 1.25em;
-	border-radius: 0.3em;
-}
+	.adoxd {
+		left: calc(100% - 1.5em);
+	}
 
-.ht,
-.jq,
-.sk,
-.ph,
-.il,
-.in,
-.fl {
-	background: #f89d94;
-}
+	.speech-bubble:after {
+		border: 0.5em solid transparent;
+		content: "";
+		margin-left: -0.5em;
+		position: absolute;
+		top: 100%;
+		left: 50%;
+	}
 
-.ht {
-	width: 80%;
-}
+	.bar-outer {
+		height: 1.25em;
+		background: #eeeeee;
+		position: relative;
+		border-radius: 0.3em;
+	}
 
-.jq {
-	width: 70%;
-}
+	.bar-inner {
+		width: 0;
+		height: 1.25em;
+		border-radius: 0.3em;
+	}
 
-.sk {
-	width: 40%;
-}
+	.ht,
+	.jq,
+	.sk,
+	.ph,
+	.il,
+	.in,
+	.fl,
+	.xd {
+		background: #f89d94;
+	}
 
-.ph,
-.il,
-.in {
-	width: 30%;
-}
+	.ht {
+		width: 80%;
+	}
 
-.fl {
-	width: 50%;
-}
+	.jq {
+		width: 70%;
+	}
 
-.html,
-.jquery,
-.sketch,
-.photo,
-.illustrator,
-.indesign,
-.fluent {
-	background: #f6877c;
-}
+	.sk {
+		width: 40%;
+	}
 
-.html:after,
-.jquery:after,
-.sketch:after,
-.photo:after,
-.illustrator:after,
-.indesign:after,
-.fluent:after {
-	border-top-color: #f6877c;
+	.ph,
+	.il,
+	.in {
+		width: 30%;
+	}
+
+	.fl {
+		width: 50%;
+	}
+
+	.xd {
+		width: 100%;
+	}
+
+	.html,
+	.jquery,
+	.sketch,
+	.photo,
+	.illustrator,
+	.indesign,
+	.fluent,
+	.adoxd {
+		background: #f6877c;
+	}
+
+	.html:after,
+	.jquery:after,
+	.sketch:after,
+	.photo:after,
+	.illustrator:after,
+	.indesign:after,
+	.fluent:after,
+	.adoxd::after {
+		border-top-color: #f6877c;
+	}
 }

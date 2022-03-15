@@ -1,6 +1,7 @@
 header {
 	height: 100vh;
 	color: $white;
+	position: relative;
 
 	// Positioning
 
@@ -10,14 +11,29 @@ header {
 	align-items: center;
 	text-align: center;
 
+	#header {
+		margin-bottom: 100px;
+	}
+
 	#divPresentation {
-		transform: translateY(300px);
-		opacity: 0;
 		animation: launchAnim 2s forwards;
 
 		h1 {
 			margin: 0;
 		}
+	}
+
+	.networks {
+		img {
+			margin: 0 10px;
+			height: 30px;
+			width: 30px;
+
+			&:hover {
+				cursor: pointer;
+			}
+		}
+		animation: launchAnim 2s forwards;
 	}
 
 	input[type="button"] {
@@ -31,13 +47,11 @@ header {
 		);
 		color: $white;
 		padding: 15px 50px;
-		margin-top: 100px;
+		margin-top: 50px;
 		border: 0px;
 		border-radius: 25px;
 		transition: 0.5s;
 
-		transform: translateY(300px);
-		opacity: 0;
 		animation: launchAnim 2s forwards;
 
 		&:hover {
@@ -47,9 +61,33 @@ header {
 	}
 
 	@keyframes launchAnim {
+		0% {
+			transform: translateY(300px);
+			opacity: 0;
+		}
 		100% {
 			transform: translateY(0px);
 			opacity: 1;
+		}
+	}
+
+	#arrow-down {
+		position: absolute;
+		bottom: 25px;
+		left: 50%;
+		height: 50px;
+		transform: translateX(-50%);
+		animation: launchAnim2 2s forwards;
+	}
+
+	@keyframes launchAnim2 {
+		0% {
+			opacity: 0;
+			transform: translate(-50%, 300px);
+		}
+		100% {
+			opacity: 1;
+			transform: translate(-50%, x0px);
 		}
 	}
 }
